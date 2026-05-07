@@ -8,3 +8,32 @@ Build an AI-powered travel planning platform where:
 
 
 
+                    ┌──────────────────────┐
+                    │      Frontend        │
+                    │  (Simple UI/Postman) │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     API Gateway      │
+                    │   Spring Boot (Java) │
+                    └──────────┬───────────┘
+                               │ REST API
+                               ▼
+                    ┌──────────────────────┐
+                    │ AI Orchestrator API  │
+                    │    FastAPI (Python)  │
+                    └──────────┬───────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                ▼              ▼              ▼
+        ┌────────────┐ ┌────────────┐ ┌────────────┐
+        │ Intent     │ │ Itinerary  │ │ Budget     │
+        │ Agent      │ │ Agent      │ │ Agent      │
+        └────────────┘ └────────────┘ └────────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Mock Travel Dataset  │
+                    │ JSON / Static Data   │
+                    └──────────────────────┘
